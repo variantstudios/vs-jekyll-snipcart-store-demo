@@ -1,0 +1,14 @@
+.footer-wrapper {
+    //background: $footer-bg;
+    .left {
+        text-align: left;
+        width: 48%;
+        display: inline-block;
+    }
+
+    .right {
+        text-align: right;
+        width: 48%;
+        display: inline-block;
+    }
+}

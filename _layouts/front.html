@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<main>
+    <section class="wrap clearfix">
+        {{content}}
+        {% assign products_by_cat = site.products | group_by:"category" %}
+        {% for cat in products_by_cat %}
+        <h2>{{cat.name | capitalize}}</h2>
+        {% for product in cat.items %}
+            {% include products.html %}
+        {% endfor %}
+        {% endfor %}
+
+    </section>
+</main>

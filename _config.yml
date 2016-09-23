@@ -1,0 +1,43 @@
+
+# Site settings
+title: "Jekyll Shop"
+email: "team@variantstudios.com"
+description: "Our base repo for jekyll-based sites"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://orchid-lyrebird.cloudvent.net" # the base hostname & protocol for your site
+#timezone: America/Denver - Don't set for CloudCannon...for reasons.
+version: "3.1.6" # the version of jekyll
+author.name: "Variant Studios"
+author.email: "team@variantstudios.com"
+
+# Gems for plugins
+gems:
+  - jekyll-paginate # Needed to add paginate on Jekyll ver 3+
+  - jekyll-sitemap # Simple jekyll plugin that creates a sitemap.xml file and you can exclude files by adding 'sitemap:false' to the frontmatter of any file(s).
+
+# Permalinks
+permalink: pretty
+
+# Pagination
+paginate: 10
+
+#Collections
+collections:
+  products:
+    output: true
+  categories:
+    output: true
+    permalink: '/categories/:title/'
+  tags:
+    output: true
+    permalink: '/tags/:title/'
+
+
+
+# typekit - Because we all need nice type faces.
+typekit:
+
+# Google Analytics - What site isn't using it?!
+google_analytics_tracking_id:
+
+exclude: ["vendor","node_modules","package.json","Gemfile","gulpfile.js","*.scss"]
