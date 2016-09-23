@@ -11,26 +11,38 @@ $(document).ready(function() {
     });
 
     /* --- SnipCart Funcationality -- */
+    //
+    // // SnipCart: by default disable the Buy Now button
+    // $('.snipcart-add-item').attr('disabled', 'disabled');
+    //
+    // // SnipCart: Size
+    // $("#select-size").change(function() {
+    //     var size = $("#select-size").val();
+    //     var sizeText = $("#select-size option:selected").text();
+    //     var desc = $(".snipcart-add-item").attr('data-item-description');
+    //     console.log(sizeText);
+    //     $(".snipcart-add-item").attr('data-item-id', size);
+    //     $('.snipcart-add-item').removeAttr('disabled');
+    //     // Optionally prepend the selected size to the product's description.
+    //     $(".snipcart-add-item").attr('data-item-description', sizeText + ': ' + desc);
+    // });
+    // // SnipCart: Quantity
+    // $("#qty").change(function() {
+    //     var qty = $("#qty").val();
+    //     console.log(qty);
+    //     $(".snipcart-add-item").attr('data-item-quantity', qty);
+    // });
+    // // Snipcart: Show a continue shopping button and not the 'x'
+    // Snipcart.execute('config', 'show_continue_shopping', true);
 
-    // SnipCart: by default disable the Buy Now button
-    $('.snipcart-add-item').attr('disabled', 'disabled');
 
-    // SnipCart: Size
-    $("#select-size").change(function() {
-        var size = $("#select-size").val();
-        var sizeText = $("#select-size option:selected").text();
-        var desc = $(".snipcart-add-item").attr('data-item-description');
-        console.log(sizeText);
-        $(".snipcart-add-item").attr('data-item-id', size);
-        $('.snipcart-add-item').removeAttr('disabled');
-        // Optionally prepend the selected size to the product's description.
-        $(".snipcart-add-item").attr('data-item-description', sizeText + ': ' + desc);
+    Snipcart.execute('registerLocale', 'en', {
+        "thankyou_message": "Thanks for your order on our super flabbergasting website! For your next purchase, use NEXT_ORDER discount code and get 10% off!"
     });
-    // SnipCart: Quantity
-    $("#qty").change(function() {
-        var qty = $("#qty").val();
-        console.log(qty);
-        $(".snipcart-add-item").attr('data-item-quantity', qty);
+
+    Snipcart.execute('bind', 'order.completed', function(order) {
+        var url = '/thankyou?order=' + order.token;
+        window.location.href = url;
     });
 
 });

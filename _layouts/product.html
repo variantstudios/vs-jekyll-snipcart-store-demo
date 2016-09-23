@@ -13,7 +13,7 @@ layout: default
 
 
         <span class="price">$ {{ page.price }}</span>
-        <select id="select-size">
+        <!-- <select id="select-size">
               <option default>Select a Size</option>
             {% for option in page.options %}
           <option value="{{option.value}}">{{option.title}}</option>
@@ -25,6 +25,17 @@ layout: default
             data-item-quantity="1"
           data-item-name="{{ page.title }}"
           data-item-id="{{ page.sku }}"
+          data-item-image="{{ page.image }}"
+          data-item-url="{{ site.url }}{{ page.url }}"
+          data-item-weight="{{ page.weight}}"
+          data-item-price="{{ page.price }}"
+           data-item-description="{{ page.short_description }}">
+          Buy Now
+        </button> -->
+        <button class="snipcart-add-item"
+            data-item-quantity="1"
+          data-item-name="{{ page.title }}"
+          data-item-id="{{ page.options[0].value }}"
           data-item-image="{{ page.image }}"
           data-item-url="{{ site.url }}{{ page.url }}"
           data-item-weight="{{ page.weight}}"
