@@ -4,7 +4,7 @@ title: "Jekyll Shop"
 email: "team@variantstudios.com"
 description: "Our base repo for jekyll-based sites"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://orchid-lyrebird.cloudvent.net" # the base hostname & protocol for your site
+url: "http://giant-ape.cloudvent.net" # the base hostname & protocol for your site
 #timezone: America/Denver - Don't set for CloudCannon...for reasons.
 version: "3.1.6" # the version of jekyll
 author.name: "Variant Studios"
