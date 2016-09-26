@@ -4,15 +4,19 @@ short_description: A women's green grass jekyll t-shirt.
 price: 17.99
 category: womens
 weight: 2
-options:
+variations:
   - title: Small
-    value: small-womens-green-grass-shirt
+    id: small-mens-womens-grass-shirt
+    price: 17.99
   - title: Medium
-    value: small-womens-green-grass-shirt
+    id: small-mens-womens-grass-shirt
+    price: 17.99
   - title: Large
-    value: large-womens-green-grass-shirt
+    id: large-mens-womens-grass-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-womens-green-grass-shirt
+    id: extra-large-womens-green-grass-shirt
+    price: 18.99
 image: /assets/images/store/womens-shirts/womens-shirts-green-grass.jpg
 layout: product
 ---

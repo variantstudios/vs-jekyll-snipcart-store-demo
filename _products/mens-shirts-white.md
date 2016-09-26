@@ -4,15 +4,19 @@ short_description: A men's white jekyll t-shirt.
 price: 17.99
 weight: 1
 category: mens
-options:
+variations:
   - title: Small
-    value: small-mens-white-shirt
+    id: small-mens-white-shirt
+    price: 17.99
   - title: Medium
-    value: small-mens-white-shirt
+    id: small-mens-white-shirt
+    price: 17.99
   - title: Large
-    value: large-mens-white-shirt
+    id: large-mens-white-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-mens-white-shirt
+    id: extra-large-mens-white-shirt
+    price: 18.99
 image: /assets/images/store/mens-shirts/mens-shirts-white.jpg
 layout: product
 ---

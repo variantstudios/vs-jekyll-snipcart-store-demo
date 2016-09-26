@@ -4,15 +4,19 @@ short_description: A women's cool blue jekyll t-shirt.
 price: 17.99
 category: womens
 weight: 3
-options:
+variations:
   - title: Small
-    value: small-womens-cool-blue-shirt
+    id: small-womens-cool-blue-shirt
+    price: 17.99
   - title: Medium
-    value: small-womens-cool-blue-shirt
+    id: small-womens-cool-blue-shirt
+    price: 17.99
   - title: Large
-    value: large-womens-cool-blue-shirt
+    id: large-womens-cool-blue-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-womens-cool-blue-shirt
+    id: extra-large-womens-cool-blue-shirt
+    price: 18.99
 image: /assets/images/store/womens-shirts/womens-shirts-cool-blue.jpg
 layout: product
 ---

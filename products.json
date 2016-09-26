@@ -1,0 +1,23 @@
+---
+layout: null
+sitemap: false
+
+---
+{
+    "products":
+    [
+    {% for product in site.products %}
+
+        {% for variation in product.variations %}
+        {
+        "id": {{ variation.id | jsonify }} ,
+        "price": {{ variation.price | jsonify }} ,
+        "url": "{{ site.url }}/products.json"}
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+
+
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+}

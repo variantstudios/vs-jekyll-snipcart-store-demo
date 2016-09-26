@@ -4,15 +4,19 @@ short_description: A men's gray jekyll t-shirt.
 price: 17.99
 weight: 2
 category: mens
-options:
+variations:
   - title: Small
-    value: small-mens-gray-shirt
+    id: small-mens-gray-shirt
+    price: 17.99
   - title: Medium
-    value: small-mens-gray-shirt
+    id: small-mens-gray-shirt
+    price: 17.99
   - title: Large
-    value: large-mens-gray-shirt
+    id: large-mens-gray-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-mens-gray-shirt
+    id: extra-large-mens-gray-shirt
+    price: 18.99
 image: /assets/images/store/mens-shirts/mens-shirts-gray.jpg
 layout: product
 ---

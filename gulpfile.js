@@ -73,7 +73,7 @@ gulp.task('sass-deploy', function() {
 gulp.task('watch', function() {
   gulp.watch('assets/sass/**', ['compass']);
   gulp.watch('assets/js/dev/**', ['scripts']);
-  gulp.watch(['**.md', '**.html', '_layouts/**.html', '_includes/**.html', '_data/**', 'pages/**', 'assets/**.csv', 'assets/images/**', 'projects/**'], ['jekyll-rebuild']);
+  gulp.watch(['**.md', '**.html', '_layouts/**.html', '_includes/**.html', '_data/**', 'pages/**', 'assets/**.csv', 'assets/images/**', 'products/**, **.json'], ['jekyll-rebuild']);
 });
 
 // Compile Compass/sass
@@ -98,7 +98,7 @@ gulp.task('compass', function() {
     .pipe(gulp.dest('_site/assets/css'));
 });
 
- 
+
 gulp.task('minify-css', function() {
   return gulp.src('/assets/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
