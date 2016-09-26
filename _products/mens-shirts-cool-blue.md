@@ -1,18 +1,21 @@
 ---
 title: Men's Cool Blue T-shirts
 short_description: A men's cool blue jekyll t-shirt.
-price: 17.99
 category: mens
 weight: 3
-options:
+variations:
   - title: Small
-    value: small-mens-cool-blue-shirt
+    id: small-mens-cool-blue-shirt
+    price: 17.99
   - title: Medium
-    value: small-mens-cool-blue-shirt
+    id: small-mens-cool-blue-shirt
+    price: 17.99
   - title: Large
-    value: large-mens-cool-blue-shirt
+    id: large-mens-cool-blue-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-mens-cool-blue-shirt
+    id: extra-large-mens-cool-blue-shirt
+    price: 18.99
 image: /assets/images/store/mens-shirts/mens-shirts-cool-blue.jpg
 layout: product
 ---

@@ -4,15 +4,19 @@ short_description: A men's green grass jekyll t-shirt.
 price: 17.99
 category: mens
 weight: 2
-options:
+variations:
   - title: Small
-    value: small-mens-green-grass-shirt
+    id: small-mens-green-grass-shirt
+    price: 17.99
   - title: Medium
-    value: small-mens-green-grass-shirt
+    id: small-mens-green-grass-shirt
+    price: 17.99
   - title: Large
-    value: large-mens-green-grass-shirt
+    id: large-mens-green-grass-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-mens-green-grass-shirt
+    id: extra-large-mens-green-grass-shirt
+    price: 18.99
 image: /assets/images/store/mens-shirts/mens-shirts-green-grass.jpg
 layout: product
 ---

@@ -4,15 +4,19 @@ short_description: A women's white jekyll t-shirt.
 price: 17.99
 category: womens
 weight: 3
-options:
+variations:
   - title: Small
-    value: small-womens-white-shirt
+    id: small-mens-white-shirt
+    price: 17.99
   - title: Medium
-    value: small-womens-white-shirt
+    id: small-mens-white-shirt
+    price: 17.99
   - title: Large
-    value: large-womens-white-shirt
+    id: large-mens-white-shirt
+    price: 17.99
   - title: Extra Large
-    value: extra-large-womens-white-shirt
+    id: extra-large-mens-white-shirt
+    price: 18.99
 image: /assets/images/store/womens-shirts/womens-shirts-white.jpg
 layout: product
 ---
