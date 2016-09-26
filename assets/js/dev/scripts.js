@@ -18,7 +18,7 @@ $(document).ready(function() {
         // SnipCart: Size
         $("#select-size").change(function() {
             var size = $("#select-size").val();
-            var sizeText = $(".snipcart-add-item").attr('data-item-title');
+            var sizeText = $(this).find(':selected').attr('data-item-title');
             var desc = $(".snipcart-add-item").attr('data-item-description');
             var price  = $(this).find(':selected').attr('data-item-price');
             //console.log(price);
