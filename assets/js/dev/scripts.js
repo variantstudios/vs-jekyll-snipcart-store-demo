@@ -45,9 +45,9 @@ $(document).ready(function() {
         "thankyou_message": "Thanks for your order on our super flabbergasting website! For your next purchase, use NEXT_ORDER discount code and get 10% off!"
     });
 
-    Snipcart.execute('bind', 'order.completed', function(order) {
-        var url = '/thankyou?order=' + order.token;
-        window.location.href = url;
-    });
+    // Snipcart.execute('bind', 'order.completed', function(order) {
+    //     var url = '/thankyou?order=' + order.token;
+    //     window.location.href = url;
+    // });
 
 });

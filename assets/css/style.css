@@ -95,7 +95,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   margin: 16px 0;
   line-height: 1.3;
-  color: #0f7abd;
+  color: #da004a;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -126,8 +126,8 @@ div.btn a {
   display: block;
   text-decoration: none;
   text-align: center;
-  background-color: #0f7abd;
-  border: 1px solid #0d6ba5;
+  background-color: #da004a;
+  border: 1px solid #c10041;
   border-radius: 2px;
   color: white;
   cursor: pointer;
@@ -139,7 +139,7 @@ div.btn a {
 }
 /* line 56, ../sass/partials/global/_mixins.scss */
 div.btn a:hover {
-  background-color: #0e74b4;
+  background-color: #d00047;
 }
 /* line 27, ../sass/partials/styleguide/type/_links.scss */
 div.btn a:hover {
@@ -184,7 +184,7 @@ input[type="text"], input[type="email"], input[type="name"], input[type="passwor
 }
 /* line 9, ../sass/partials/styleguide/forms/_inputs.scss */
 input[type="text"]:active, input[type="text"]:focus, input[type="email"]:active, input[type="email"]:focus, input[type="name"]:active, input[type="name"]:focus, input[type="password"]:active, input[type="password"]:focus, input[type="file"]:active, input[type="file"]:focus {
-  border: 1px solid #0f7abd;
+  border: 1px solid #da004a;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -203,7 +203,7 @@ textarea {
 }
 /* line 9, ../sass/partials/styleguide/forms/_textarea.scss */
 textarea:active, textarea:focus {
-  border: 1px solid #0f7abd;
+  border: 1px solid #da004a;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -384,7 +384,7 @@ ul.pager li a:visited {
 }
 /* line 28, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:hover {
-  color: #0f7abd;
+  color: #da004a;
 }
 /* line 31, ../sass/partials/design/blocks/_main-navigation.scss */
 .menu li a:active {
@@ -421,7 +421,7 @@ ul.pager li a:visited {
 /* line 52, ../sass/partials/design/blocks/_main-navigation.scss */
 .js .menu-btn {
   padding: 1em;
-  background: #0f7abd;
+  background: #da004a;
   border: none;
   color: #fff;
   font-weight: 700;
@@ -448,29 +448,71 @@ ul.pager li a:visited {
   display: none;
 }
 
-/* line 1, ../sass/partials/design/blocks/_products.scss */
-.product {
-  display: inline-block;
-  margin-right: 0px;
+/* line 71, ../sass/partials/design/blocks/_main-navigation.scss */
+.js .menu-btn {
+  margin: 1em 0;
 }
-/* line 4, ../sass/partials/design/blocks/_products.scss */
+
+/* line 1, ../sass/partials/design/blocks/_products.scss */
+.product-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 5, ../sass/partials/design/blocks/_products.scss */
+.product {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 0px;
+  text-align: center;
+}
+/* line 10, ../sass/partials/design/blocks/_products.scss */
 .product h3 {
   font-size: 1em;
   text-align: center;
 }
 
-/* line 9, ../sass/partials/design/blocks/_products.scss */
+/* line 15, ../sass/partials/design/blocks/_products.scss */
 input#qty {
   width: 44px;
 }
 
-/* line 3, ../sass/partials/design/regions/_footer.scss */
+/* line 18, ../sass/partials/design/blocks/_products.scss */
+.product-content {
+  float: right;
+  width: 75%;
+}
+
+/* line 21, ../sass/partials/design/blocks/_products.scss */
+h2#snipcart-title {
+  color: #fff;
+}
+
+/* line 24, ../sass/partials/design/blocks/_products.scss */
+div.snipcart-summary-empty {
+  /*display: none;*/
+}
+
+/* line 27, ../sass/partials/design/blocks/_products.scss */
+.snipcart-summary {
+  text-align: right;
+  clear: both;
+  color: #989898;
+}
+
+/* line 1, ../sass/partials/design/regions/_footer.scss */
+.footer-wrapper {
+  margin-bottom: 2em;
+}
+/* line 4, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper .left {
   text-align: left;
   width: 48%;
   display: inline-block;
 }
-/* line 9, ../sass/partials/design/regions/_footer.scss */
+/* line 10, ../sass/partials/design/regions/_footer.scss */
 .footer-wrapper .right {
   text-align: right;
   width: 48%;
@@ -646,7 +688,7 @@ main, header, footer, section, aside {
   height: 25px;
   border-radius: 50%;
   margin-bottom: -5px;
-  border: 2px solid #0f7abd;
+  border: 2px solid #da004a;
 }
 /* line 16, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul {
@@ -659,7 +701,7 @@ main, header, footer, section, aside {
 }
 /* line 21, ../sass/partials/design/views/_blog.scss */
 .blog-wrapper .right-blog ul li.tag-label {
-  background: #0f7abd;
+  background: #da004a;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: .8rem;

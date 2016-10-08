@@ -1,6 +1,12 @@
+.product-grid {
+    display: flex;
+}
+
 .product {
-    display: inline-block;
+    //display: inline-block;
+    flex: 1;
     margin-right: 0px;
+    text-align: center;
     h3 {
         font-size: 1em;
         text-align: center;
@@ -8,4 +14,18 @@
 }
 input#qty {
     width: 44px;
+}
+.product-content {
+    float: right; width: 75%;
+}
+h2#snipcart-title {
+    color: #fff;
+}
+div.snipcart-summary-empty {
+    /*display: none;*/
+}
+.snipcart-summary {
+    text-align: right;
+    clear: both;
+    color: #989898;
 }
